@@ -1,0 +1,13 @@
+Spatial entity,Package ,Data source,Source 
+Administrative Boundaries ,Rgeoboundaries ,geoBoundaries API,Github
+Open Street Map data,osmdata,OpenStreetMap,CRAN
+Population,wopr,WorldPop Open Population Repository,Github
+Elevation,elevatr,USGS elevation point query service ,CRAN
+Temperature,raster ,WorldClim,CRAN
+Rainfall,nasapower,NASA POWER,Github
+Humidity,nasapower,NASA POWER,Github
+Vegetation,MODIStsp,MODIStsp,CRAN
+Land Cover ,MODIStsp,MODIStsp,CRAN
+DHS,rdhs,DHS API,Github
+Malaria,malariaAtlas,Malaria Atlas Project-data explorer,CRAN
+Air Pollution,openair,UK Air Information Resource,CRAN

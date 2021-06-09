@@ -1,8 +1,8 @@
 ---
-title: "Title"
-subtitle: "Subtitle"
-author: "Author"
-institute: "Institute"
+title: "rspatialdata"
+subtitle: "A collection of data source and tutorials on visualising spatial data using R"
+author: "Presenters - Varsha Ujjinni Vijay Kumar, Dilinie Seimon"
+institute: "Monash University"
 output:
   xaringan::moon_reader:
     css: ["useR", "useR-fonts"]
@@ -11,6 +11,48 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+---
+
+```{r libraries, include=FALSE}
+library(tidyverse)
+library(readxl)
+```
+
+Importance of Spatial data analysis
+
+- With increasing accessibility to geographic information systems (GIS), statisticians and data analysts come across data sets with geo-coded locations. This has generated considerable interest in statistical modeling for location-referenced spatial data. 
+
+- Researchers in diverse disciplines within the physical, social, and environmental sciences and in public health are increasingly faced with the task of analyzing data that are geographically referenced and often presented as maps.
+
+- Disease maps are used to highlight geographic areas with high and low prevalence, incidence, or mortality rates of a specific disease and the variability of such rates over a spatial domain.
 
 ---
+class: middle
+
+# Rspatialdata
+
+<div style="width: 100%; height: 150px; background: #ccc; padding: 1em 1em 1em 1em; text-align:center;">
+<p style="font-size:32px;">A collection of data sources and tutorials on visualizing spatial data using R</p>
+</div>
+
+- Open and reliable data, analytic tools and collaborative research are crucial for solving global challenges and achieving sustainable development.
+
+- The website includes a collection of data sources and tutorials on how to download and visualize a wide range of data sets. 
+
+---
+
+## Tutorials and packages used
+
+```{r table, echo=FALSE}
+table <- read.csv(here::here("table.csv"))
+table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%', height = '70%',
+                        caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: center;',
+    'Table: ', htmltools::em('Spatial Attributes')
+  ))
+```
+
+
+---
+
 
