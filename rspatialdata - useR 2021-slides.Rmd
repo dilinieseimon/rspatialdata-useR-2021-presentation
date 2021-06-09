@@ -1,7 +1,9 @@
 ---
 title: "rspatialdata"
 subtitle: "A collection of data source and tutorials on visualising spatial data using R"
-author: "Presenters - Varsha Ujjinni Vijay Kumar, Dilinie Seimon"
+author: 
+   - Varsha Ujjinni Vijay Kumar
+   - Dilinie Seimon
 institute: "Monash University"
 output:
   xaringan::moon_reader:
@@ -16,9 +18,10 @@ output:
 ```{r libraries, include=FALSE}
 library(tidyverse)
 library(readxl)
+library(fontawesome)
 ```
 
-Importance of Spatial data analysis
+### Importance of Spatial data analysis `r emo::ji("chart")` 
 
 - With increasing accessibility to geographic information systems (GIS), statisticians and data analysts come across data sets with geo-coded locations. This has generated considerable interest in statistical modeling for location-referenced spatial data. 
 
@@ -29,7 +32,7 @@ Importance of Spatial data analysis
 ---
 class: middle
 
-# Rspatialdata
+# Rspatialdata  `r emo::ji("space")` 
 
 <div style="width: 100%; height: 150px; background: #ccc; padding: 1em 1em 1em 1em; text-align:center;">
 <p style="font-size:32px;">A collection of data sources and tutorials on visualizing spatial data using R</p>
@@ -41,7 +44,7 @@ class: middle
 
 ---
 
-## Tutorials and packages used
+## Tutorials and packages used  `r emo::ji("box")` 
 
 ```{r table, echo=FALSE}
 table <- read.csv(here::here("table.csv"))
@@ -54,5 +57,38 @@ table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%
 
 
 ---
+## Field of use  `r emo::ji("zoom")` 
+
+- Child undernutrition, HIV prevalence and the the burden of cholera in Africa. 
+
+- Electoral, planning and statistical studies.
+
+- Flood inundation modeling, air pollution exposure, 1assessment of socio-economic factors and property prices, and for the study of crime and place.
+
+- Role of elevation in species connectivity and genetic structure.
+
+- Global tree restoration potential, High-resolution monitoring of drought in South Asia.
+
+- Rice crop monitoring, Vector-borne diseases: - Climate fluctuations and malaria transmission dynamics.
+
+- Determinants of unmet need for family planning and implications for women’s health.
+ 
+---
+## Collaborators  `r emo::ji("industrial")`
+
+<img src="images/paulamoraga.png" width="120px" align = "right">
+<h3><a href="https://www.paulamoraga.com/">Paula Moraga</a></h3>
+
+<img src="images/varshaujjini.png" width="120px" align = "right">
+<h3><a href= "https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/">Varsha Ujjinni Vijay Kumar</a></h3>
+
+<img src="images/dilinieseimon.png" width="120px" align = "right">
+<h3><a href= "https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon</a></h3>
+
+<img src="images/andreamaral.png" width="120px" align = "right">
+<h3><a href= "https://www.avramaral.com/">Andre Ribeiro Amaral</a></h3>
+
+
+
 
 
