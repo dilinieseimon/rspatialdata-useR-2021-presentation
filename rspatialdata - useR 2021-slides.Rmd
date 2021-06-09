@@ -1,0 +1,16 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author: "Author"
+institute: "Institute"
+output:
+  xaringan::moon_reader:
+    css: ["useR", "useR-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+
+---
+
