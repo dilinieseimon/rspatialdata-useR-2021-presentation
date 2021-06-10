@@ -1,9 +1,7 @@
 ---
 title: "rspatialdata"
 subtitle: "A collection of data source and tutorials on visualising spatial data using R"
-author: 
-   - Varsha Ujjinni Vijay Kumar
-   - Dilinie Seimon
+author: "Varsha Ujjinni Vijay Kumar, Dilinie Seimon"
 institute: "Monash University"
 output:
   xaringan::moon_reader:
@@ -21,30 +19,46 @@ library(readxl)
 library(fontawesome)
 ```
 
-### Importance of Spatial data analysis `r emo::ji("chart")` 
+## Importance of spatial data
 
-- With increasing accessibility to geographic information systems (GIS), statisticians and data analysts come across data sets with geo-coded locations. This has generated considerable interest in statistical modeling for location-referenced spatial data. 
+- Increased accessibility to open and reliable data, analytical tools and geographic information systems has generated interest in spatial data analysis and visualization.
 
-- Researchers in diverse disciplines within the physical, social, and environmental sciences and in public health are increasingly faced with the task of analyzing data that are geographically referenced and often presented as maps.
-
-- Disease maps are used to highlight geographic areas with high and low prevalence, incidence, or mortality rates of a specific disease and the variability of such rates over a spatial domain.
+- Researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors are increasingly faced with the task of analyzing data that are geographically referenced and often presented as maps.
 
 ---
-class: middle
 
-# Rspatialdata  `r emo::ji("space")` 
+## R as a tool for data visualization
 
-<div style="width: 100%; height: 150px; background: #ccc; padding: 1em 1em 1em 1em; text-align:center;">
-<p style="font-size:32px;">A collection of data sources and tutorials on visualizing spatial data using R</p>
-</div>
+- Several R-packages have been recently developed as clients for various spatial databases and repositories to meet the growing demand for easily accessible and reliable spatial and spatio-temporal data.
 
-- Open and reliable data, analytic tools and collaborative research are crucial for solving global challenges and achieving sustainable development.
+- While documentation and many open source repositories on how to use these packages exist, there is an increasing need for a one stop repository of this information and tutorials on how to use them.
+
+---
+
+## rspatialdata
+
+- A collection of data sources and tutorials on visualizing spatial data using R.
 
 - The website includes a collection of data sources and tutorials on how to download and visualize a wide range of data sets. 
 
+[https://rspatialdata.github.io](https://rspatialdata.github.io/)
+
+
+```{r rspatialdata, fig.align = "center", out.height="200px", echo=FALSE, fig.alt = "A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution"}
+knitr::include_graphics("images/listoftutorials.PNG", dpi = NA)
+```
+
 ---
 
-## Tutorials and packages used  `r emo::ji("box")` 
+## Our vision
+
+- Not to be a comprehensive list of R-packages or tutorials, but to be a starting point for spatial data visualization using R.
+
+- We want users to understand the process of visualizing different spatial objects using different packages and apply it to their need, rather than simply replicating our tutorials.
+
+---
+
+## Tutorials and packages used
 
 ```{r table, echo=FALSE}
 table <- read.csv(here::here("table.csv"))
@@ -55,9 +69,9 @@ table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%
   ))
 ```
 
-
 ---
-## Field of use  `r emo::ji("zoom")` 
+
+## Field of use
 
 - Child undernutrition, HIV prevalence and the the burden of cholera in Africa. 
 
@@ -74,7 +88,8 @@ table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%
 - Determinants of unmet need for family planning and implications for women’s health.
  
 ---
-## Collaborators  `r emo::ji("industrial")`
+
+## Collaborators
 
 <img src="images/paulamoraga.png" width="120px" align = "right">
 <h3><a href="https://www.paulamoraga.com/">Paula Moraga</a></h3>
@@ -88,7 +103,4 @@ table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%
 <img src="images/andreamaral.png" width="120px" align = "right">
 <h3><a href= "https://www.avramaral.com/">Andre Ribeiro Amaral</a></h3>
 
-
-
-
-
+---
