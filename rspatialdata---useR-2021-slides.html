@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>rspatialdata</title>
+    <title>rspatialdata - A collection of data sources and tutorials on visualising spatial data using R</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Varsha Ujjinni Vijay Kumar, Dilinie Seimon" />
-    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <meta name="author" content="Paula Moraga" />
+    <meta name="author" content="Varsha Ujjinni Vijay Kumar" />
+    <meta name="author" content="Dilinie Seimon" />
+    <meta name="author" content="Andre Ribeiro Amaral" />
     <link href="libs/remark-css-0.0.1/useR.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/useR-fonts.css" rel="stylesheet" />
     <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
@@ -16,19 +18,21 @@
     <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
     <link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
     <script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="styling.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# rspatialdata
-## A collection of data source and tutorials on visualising spatial data using R
-### Varsha Ujjinni Vijay Kumar, Dilinie Seimon
-### Monash University
+# rspatialdata - A collection of data sources and tutorials on visualising spatial data using R
+### Paula Moraga
+### Varsha Ujjinni Vijay Kumar
+### Dilinie Seimon
+### Andre Ribeiro Amaral
 
 ---
 
-
+class: hide-logo,hide-logo1
 
 
 ## Importance of spatial data
@@ -38,7 +42,7 @@ class: center, middle, inverse, title-slide
 - Researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors are increasingly faced with the task of analyzing data that are geographically referenced and often presented as maps.
 
 ---
-
+class: hide-logo,hide-logo1
 ## R as a tool for data visualization
 
 - Several R-packages have been recently developed as clients for various spatial databases and repositories to meet the growing demand for easily accessible and reliable spatial and spatio-temporal data.
@@ -46,7 +50,7 @@ class: center, middle, inverse, title-slide
 - While documentation and many open source repositories on how to use these packages exist, there is an increasing need for a one stop repository of this information and tutorials on how to use them.
 
 ---
-
+class: hide-logo,hide-logo1
 ## rspatialdata
 
 - A collection of data sources and tutorials on visualizing spatial data using R.
@@ -59,7 +63,7 @@ class: center, middle, inverse, title-slide
 &lt;img src="images/listoftutorials.PNG" title="A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution" alt="A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution" height="200px" style="display: block; margin: auto;" /&gt;
 
 ---
-
+class: hide-logo,hide-logo1
 ## Our vision
 
 - Not to be a comprehensive list of R-packages or tutorials, but to be a starting point for spatial data visualization using R.
@@ -67,14 +71,14 @@ class: center, middle, inverse, title-slide
 - We want users to understand the process of visualizing different spatial objects using different packages and apply it to their need, rather than simply replicating our tutorials.
 
 ---
-
+class: hide-logo,hide-logo1
 ## Tutorials and packages used
 
-<div id="htmlwidget-2e4ff27aeef6a088cbbb" style="width:100%;height:70%;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2e4ff27aeef6a088cbbb">{"x":{"filter":"none","caption":"<caption style=\"caption-side: bottom; text-align: center;\">\n  Table: \n  <em>Spatial Attributes<\/em>\n<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12"],["Administrative Boundaries ","Open Street Map data","Population","Elevation","Temperature","Rainfall","Humidity","Vegetation","Land Cover ","DHS","Malaria","Air Pollution"],["Rgeoboundaries ","osmdata","wopr","elevatr","raster ","nasapower","nasapower","MODIStsp","MODIStsp","rdhs","malariaAtlas","openair"],["geoBoundaries API","OpenStreetMap","WorldPop Open Population Repository","USGS elevation point query service ","WorldClim","NASA POWER","NASA POWER","MODIStsp","MODIStsp","DHS API","Malaria Atlas Project-data explorer","UK Air Information Resource"],["Github","CRAN","Github","CRAN","CRAN","Github","Github","CRAN","CRAN","Github","CRAN","CRAN"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Spatial.entity<\/th>\n      <th>Package<\/th>\n      <th>Data.source<\/th>\n      <th>Source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"dom":"t","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d87d111fb8fa8a9bf252" style="width:100%;height:70%;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d87d111fb8fa8a9bf252">{"x":{"filter":"none","caption":"<caption style=\"caption-side: bottom; text-align: center;\">\n  Table: \n  <em>Spatial Attributes<\/em>\n<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12"],["Administrative Boundaries ","Open Street Map data","Population","Elevation","Temperature","Rainfall","Humidity","Vegetation","Land Cover ","DHS","Malaria","Air Pollution"],["Rgeoboundaries ","osmdata","wopr","elevatr","raster ","nasapower","nasapower","MODIStsp","MODIStsp","rdhs","malariaAtlas","openair"],["geoBoundaries API","OpenStreetMap","WorldPop Open Population Repository","USGS elevation point query service ","WorldClim","NASA POWER","NASA POWER","MODIStsp","MODIStsp","DHS API","Malaria Atlas Project-data explorer","UK Air Information Resource"],["Github","CRAN","Github","CRAN","CRAN","Github","Github","CRAN","CRAN","Github","CRAN","CRAN"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Spatial.entity<\/th>\n      <th>Package<\/th>\n      <th>Data.source<\/th>\n      <th>Source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"dom":"t","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
-
+class: hide-logo,hide-logo1
 ## Field of use
 
 - Child undernutrition, HIV prevalence and the the burden of cholera in Africa. 
@@ -92,22 +96,20 @@ class: center, middle, inverse, title-slide
 - Determinants of unmet need for family planning and implications for women’s health.
  
 ---
-
+class: hide-logo,hide-logo1
 ## Collaborators
 
 &lt;img src="images/paulamoraga.png" width="120px" align = "right"&gt;
-&lt;h3&gt;&lt;a href="https://www.paulamoraga.com/"&gt;Paula Moraga&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href="https://www.paulamoraga.com/"&gt;Paula Moraga (KAUST)&lt;/a&gt;&lt;/h3&gt;
 
 &lt;img src="images/varshaujjini.png" width="120px" align = "right"&gt;
-&lt;h3&gt;&lt;a href= "https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/"&gt;Varsha Ujjinni Vijay Kumar&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href= "https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/"&gt;Varsha Ujjinni Vijay Kumar (Monash University)&lt;/a&gt;&lt;/h3&gt;
 
 &lt;img src="images/dilinieseimon.png" width="120px" align = "right"&gt;
-&lt;h3&gt;&lt;a href= "https://www.linkedin.com/in/dilinieseimon/"&gt;Dilinie Seimon&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href= "https://www.linkedin.com/in/dilinieseimon/"&gt;Dilinie Seimon (Monash University)&lt;/a&gt;&lt;/h3&gt;
 
 &lt;img src="images/andreamaral.png" width="120px" align = "right"&gt;
-&lt;h3&gt;&lt;a href= "https://www.avramaral.com/"&gt;Andre Ribeiro Amaral&lt;/a&gt;&lt;/h3&gt;
-
----
+&lt;h3&gt;&lt;a href= "https://www.avramaral.com/"&gt;Andre Ribeiro Amaral (KAUST)&lt;/a&gt;&lt;/h3&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -198,6 +200,61 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<style>
+.logo {
+  background-image: url(kaust.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 24em;
+  left: 2em;
+  width: 210px;
+  height: 132px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    //':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<style>
+.logo1 {
+  background-image: url(monash.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 24em;
+  left: 14em;
+  width: 210px;
+  height: 136px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    //':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo1)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo1"></div>';
+  });
+</script>
 
 <script>
 slideshow._releaseMath = function(el) {

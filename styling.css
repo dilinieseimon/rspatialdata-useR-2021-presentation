@@ -1,0 +1,15 @@
+.title-slide h3{
+position: unset;
+font-size: revert;
+margin-top: -29px;
+}
+
+.title-slide h1{
+position: initial;
+font-size: 26px;
+padding-bottom: inherit;
+}
+
+.remark-slide-content h3 {
+    font-size: 27px;
+}

@@ -1,0 +1,108 @@
+---
+title: "rspatialdata - A collection of data sources and tutorials on visualising spatial data using R"
+author: 
+ - Paula Moraga
+ - Varsha Ujjinni Vijay Kumar
+ - Dilinie Seimon
+ - Andre Ribeiro Amaral
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
+    css: ["useR", "useR-fonts","styling.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: hide-logo,hide-logo1
+```{r libraries, include=FALSE}
+library(tidyverse)
+library(readxl)
+library(fontawesome)
+```
+
+## Importance of spatial data
+
+- Increased accessibility to open and reliable data, analytical tools and geographic information systems has generated interest in spatial data analysis and visualization.
+
+- Researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors are increasingly faced with the task of analyzing data that are geographically referenced and often presented as maps.
+
+---
+class: hide-logo,hide-logo1
+## R as a tool for data visualization
+
+- Several R-packages have been recently developed as clients for various spatial databases and repositories to meet the growing demand for easily accessible and reliable spatial and spatio-temporal data.
+
+- While documentation and many open source repositories on how to use these packages exist, there is an increasing need for a one stop repository of this information and tutorials on how to use them.
+
+---
+class: hide-logo,hide-logo1
+## rspatialdata
+
+- A collection of data sources and tutorials on visualizing spatial data using R.
+
+- The website includes a collection of data sources and tutorials on how to download and visualize a wide range of data sets. 
+
+[https://rspatialdata.github.io](https://rspatialdata.github.io/)
+
+
+```{r rspatialdata, fig.align = "center", out.height="200px", echo=FALSE, fig.alt = "A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution"}
+knitr::include_graphics("images/listoftutorials.PNG", dpi = NA)
+```
+
+---
+class: hide-logo,hide-logo1
+## Our vision
+
+- Not to be a comprehensive list of R-packages or tutorials, but to be a starting point for spatial data visualization using R.
+
+- We want users to understand the process of visualizing different spatial objects using different packages and apply it to their need, rather than simply replicating our tutorials.
+
+---
+class: hide-logo,hide-logo1
+## Tutorials and packages used
+
+```{r table, echo=FALSE}
+table <- read.csv(here::here("table.csv"))
+table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%', height = '70%',
+                        caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: center;',
+    'Table: ', htmltools::em('Spatial Attributes')
+  ))
+```
+
+---
+class: hide-logo,hide-logo1
+## Field of use
+
+- Child undernutrition, HIV prevalence and the the burden of cholera in Africa. 
+
+- Electoral, planning and statistical studies.
+
+- Flood inundation modeling, air pollution exposure, 1assessment of socio-economic factors and property prices, and for the study of crime and place.
+
+- Role of elevation in species connectivity and genetic structure.
+
+- Global tree restoration potential, High-resolution monitoring of drought in South Asia.
+
+- Rice crop monitoring, Vector-borne diseases: - Climate fluctuations and malaria transmission dynamics.
+
+- Determinants of unmet need for family planning and implications for women’s health.
+ 
+---
+class: hide-logo,hide-logo1
+## Collaborators
+
+<img src="images/paulamoraga.png" width="120px" align = "right">
+<h3><a href="https://www.paulamoraga.com/">Paula Moraga (KAUST)</a></h3>
+
+<img src="images/varshaujjini.png" width="120px" align = "right">
+<h3><a href= "https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/">Varsha Ujjinni Vijay Kumar (Monash University)</a></h3>
+
+<img src="images/dilinieseimon.png" width="120px" align = "right">
+<h3><a href= "https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon (Monash University)</a></h3>
+
+<img src="images/andreamaral.png" width="120px" align = "right">
+<h3><a href= "https://www.avramaral.com/">Andre Ribeiro Amaral (KAUST)</a></h3>
