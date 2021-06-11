@@ -13,3 +13,13 @@ padding-bottom: inherit;
 .remark-slide-content h3 {
     font-size: 27px;
 }
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content img {
+    width: 25%;
+    min-width: 100px;
+}

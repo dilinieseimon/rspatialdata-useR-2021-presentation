@@ -29,6 +29,16 @@ library(fontawesome)
 
 - Researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors are increasingly faced with the task of analyzing data that are geographically referenced and often presented as maps.
 
+
+<div id="content">
+   <img src="images/admin-bound.PNG" alt="pic1">
+   <img src="images/elev.PNG" alt="pic2">
+   <img src="images/osm.PNG" alt="pic3">
+   <img src="images/pop.PNG" alt="pic4">
+</div>
+
+
+
 ---
 class: hide-logo,hide-logo1
 ## R as a tool for data visualization
@@ -36,6 +46,13 @@ class: hide-logo,hide-logo1
 - Several R-packages have been recently developed as clients for various spatial databases and repositories to meet the growing demand for easily accessible and reliable spatial and spatio-temporal data.
 
 - While documentation and many open source repositories on how to use these packages exist, there is an increasing need for a one stop repository of this information and tutorials on how to use them.
+
+<div id="content">
+   <img src="images/air.PNG" alt="air">
+   <img src="images/landcover.PNG" alt="cover">
+   <img src="images/temp.PNG" alt="pic3">
+   <img src="images/veg.PNG" alt="pic4">
+</div>
 
 ---
 class: hide-logo,hide-logo1
@@ -60,13 +77,19 @@ class: hide-logo,hide-logo1
 
 - We want users to understand the process of visualizing different spatial objects using different packages and apply it to their need, rather than simply replicating our tutorials.
 
+
+<div id="content">
+   <img src="images/humid.PNG" alt="humid">
+   <img src="images/rain.PNG" alt="rain">
+   <img src="images/malaria.PNG" alt="malaria">
+</div>
 ---
 class: hide-logo,hide-logo1
 ## Tutorials and packages used
 
 ```{r table, echo=FALSE}
 table <- read.csv(here::here("table.csv"))
-table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%', height = '70%',
+table %>% select(-Source) %>%  DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%', height = '70%',
                         caption = htmltools::tags$caption(
     style = 'caption-side: bottom; text-align: center;',
     'Table: ', htmltools::em('Spatial Attributes')
