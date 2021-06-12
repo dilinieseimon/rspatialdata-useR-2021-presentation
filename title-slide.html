@@ -1,0 +1,48 @@
+<style>
+
+.kaustlogo {
+  background-image: url(images/KAUSTlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 27em;
+  left: 12em;
+  width: 210px;
+  height: 132px;
+  z-index: 0;
+}
+
+.monashlogo {
+  background-image: url(images/MONASHlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 26em;
+  left: 25em;
+  width: 215px;
+  height: 140px;
+  z-index: 0;
+}
+
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.hide-kaustlogo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="kaustlogo"></div>';
+  });
+
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.hide-monashlogo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="monashlogo"></div>';
+  });
+</script>
+

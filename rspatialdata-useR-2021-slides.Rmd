@@ -1,0 +1,118 @@
+---
+title: "rspatialdata - A collection of data sources and tutorials on visualising spatial data using R"
+author: 
+ - Paula Moraga
+ - Varsha Ujjinni Vijay Kumar
+ - Dilinie Seimon
+ - Andre Ribeiro Amaral
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: title-slide.html
+    css: ["useR", "useR-fonts","styles.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r libraries, include=FALSE}
+library(tidyverse)
+library(readxl)
+```
+
+class: hide-kaustlogo,hide-monashlogo
+
+## Importance of spatial data
+
+- Increased accessibility to open and reliable data, analytical tools and geographic information systems.
+
+- Used by researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors.
+
+
+```{r nigeria-population, fig.align = "center", out.height="300px", echo=FALSE, fig.alt = "A map of Nigeria divided into administrative level 3 divisions and colored by population estimates."}
+knitr::include_graphics("images/PopulationNigeria.PNG", dpi = NA)
+```
+
+---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## R as a tool for data visualization
+
+- Several R-packages have been recently developed as clients for various spatial databases and repositories.
+
+- Although documentation exists, there is an increasing need for a one stop repository of this information and a guide on how to use them.
+
+```{r mongolia-ndvi, fig.align = "center", out.height="300px", echo=FALSE, fig.alt = "A map of Mongolia colored by the Normalized Difference Vegetation Index recorded on 01-06-2020."}
+knitr::include_graphics("images/NDVIMongolia.PNG", dpi = NA)
+```
+
+---
+class: hide-kaustlogo,hide-monashlogo
+
+## rspatialdata
+
+- A collection of data sources and tutorials on visualizing spatial data using R.
+
+- The website includes a collection of data sources and tutorials on how to download and visualize a wide range of data sets. 
+
+[https://rspatialdata.github.io](https://rspatialdata.github.io/)
+
+
+```{r rspatialdata, fig.align = "center", out.height="200px", echo=FALSE, fig.alt = "A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution"}
+knitr::include_graphics("images/listoftutorials.PNG", dpi = NA)
+```
+
+---
+class: hide-kaustlogo,hide-monashlogo
+
+## Our tutorials
+
+- Data source
+
+- R-package used and installation instructions
+
+- Functions available
+
+- Downloading data
+
+- Interpreting downloaded spatial objects
+
+- Different approaches in visualizing downloaded data
+
+- List of examples
+
+- References
+
+---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## Our vision
+
+- Not to be a comprehensive list of R-packages or tutorials, but to be a starting point for spatial data visualization using R.
+
+- We want users to understand the process of visualizing different spatial objects using different packages and apply it to their need, rather than simply replicating our tutorials.
+
+
+```{r zimbabwe-landcover, fig.align = "center", out.height="300px", echo=FALSE, fig.alt = "A map of Zimbabwe colored by the classification of land cover types in the year 2019."}
+knitr::include_graphics("images/LandCoverZimbabwe.PNG", dpi = NA)
+```
+
+---
+class: hide-kaustlogo,hide-monashlogo
+
+## Thanks!
+
+<table style="width:100%; padding-top: 5em;">
+<tr>
+<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br>Paula Moraga<br>(KAUST)</td>
+<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br>Dilinie Seimon<br>(Monash University)</td>
+<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br>Varsha Ujjini Vijay Kumar<br>(Monash University)</td>
+<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br>Andre Ribeiro Amaral<br>(KAUST)</td>
+</tr>
+</table>
+
