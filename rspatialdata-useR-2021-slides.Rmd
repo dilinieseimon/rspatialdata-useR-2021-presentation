@@ -57,8 +57,6 @@ class: hide-kaustlogo,hide-monashlogo
 
 - A collection of data sources and tutorials on visualizing spatial data using R.
 
-- The website includes a collection of data sources and tutorials on how to download and visualize a wide range of data sets. 
-
 [https://rspatialdata.github.io](https://rspatialdata.github.io/)
 
 
