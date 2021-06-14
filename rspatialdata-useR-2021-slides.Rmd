@@ -1,10 +1,5 @@
 ---
 title: "rspatialdata - A collection of data sources and tutorials on visualising spatial data using R"
-author: 
- - Paula Moraga
- - Varsha Ujjinni Vijay Kumar
- - Dilinie Seimon
- - Andre Ribeiro Amaral
 output:
   xaringan::moon_reader:
     includes:

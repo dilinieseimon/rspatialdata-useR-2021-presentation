@@ -3,10 +3,6 @@
   <head>
     <title>rspatialdata - A collection of data sources and tutorials on visualising spatial data using R</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Paula Moraga" />
-    <meta name="author" content="Varsha Ujjinni Vijay Kumar" />
-    <meta name="author" content="Dilinie Seimon" />
-    <meta name="author" content="Andre Ribeiro Amaral" />
     <script src="libs/header-attrs-2.7/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/useR.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/useR-fonts.css" rel="stylesheet" />
@@ -17,10 +13,6 @@
 class: center, middle, inverse, title-slide
 
 # rspatialdata - A collection of data sources and tutorials on visualising spatial data using R
-### Paula Moraga
-### Varsha Ujjinni Vijay Kumar
-### Dilinie Seimon
-### Andre Ribeiro Amaral
 
 ---
 
@@ -202,14 +194,13 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
 <style>
-
 .kaustlogo {
   background-image: url(images/KAUSTlogo.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 27em;
-  left: 12em;
+  left: 22em;
   width: 210px;
   height: 132px;
   z-index: 0;
@@ -221,31 +212,25 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   background-repeat: no-repeat;
   position: absolute;
   top: 26em;
-  left: 25em;
+  left: 12em;
   width: 215px;
   height: 140px;
   z-index: 0;
 }
-
 </style>
 
 <script>
 document
   .querySelectorAll(
     '.remark-slide-content' +
-    ':not(.hide-kaustlogo)'
-  )
-  .forEach(el => {
-    el.innerHTML += '<div class="kaustlogo"></div>';
-  });
-
-document
-  .querySelectorAll(
-    '.remark-slide-content' +
+    ':not(.hide-kaustlogo)' +
     ':not(.hide-monashlogo)'
   )
   .forEach(el => {
+    el.innerHTML += '<h3 style="padding-top: 2em">Dilinie Seimon<br>Varsha Ujjini Vijay Kumar</h3>';
+    el.innerHTML += '<h3 style="padding-top: 1em; font-size: 18px;">In collaboration with Paula Moraga and Andre Ribeiro Amaral</h3>';
     el.innerHTML += '<div class="monashlogo"></div>';
+    el.innerHTML += '<div class="kaustlogo"></div>';
   });
 </script>
 
