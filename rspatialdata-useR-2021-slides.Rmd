@@ -13,12 +13,15 @@ output:
 ---
 
 
+
 ```{r libraries, include=FALSE}
 library(tidyverse)
 library(readxl)
 ```
 
 class: hide-kaustlogo,hide-monashlogo
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 ## Importance of spatial data
 
@@ -102,10 +105,10 @@ class: hide-kaustlogo,hide-monashlogo
 
 <table style="width:100%; padding-top: 5em;">
 <tr>
-<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br>Paula Moraga<br>(KAUST)</td>
-<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br>Dilinie Seimon<br>(Monash University)</td>
-<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br>Varsha Ujjini Vijay Kumar<br>(Monash University)</td>
-<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br>Andre Ribeiro Amaral<br>(KAUST)</td>
+<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br>Paula Moraga<br>(KAUST)<br><a style="font-size: 12px;" href="mailto:paula.moraga@kaust.edu.sa">paula.moraga@kaust.edu.sa</a></td>
+<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br>Dilinie Seimon<br>(Monash University)<br><a style="font-size: 12px;" href="mailto:asei0003@student.monash.edu">asei0003@student.monash.edu</a></td>
+<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br>Varsha Ujjini Vijay Kumar<br>(Monash University)<br><a style="font-size: 12px;" href="mailto:vujj0001@student.monash.edu">vujj0001@student.monash.edu</a></td>
+<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br>Andre Ribeiro Amaral<br>(KAUST)<br><a style="font-size: 12px;" href="mailto:andre.ribeiroamaral@kaust.edu.sa">andre.ribeiroamaral@kaust.edu.sa</a></td>
 </tr>
 </table>
 
