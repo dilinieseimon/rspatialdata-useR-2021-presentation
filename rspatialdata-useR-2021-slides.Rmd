@@ -30,8 +30,8 @@ class: hide-kaustlogo,hide-monashlogo
 - Used by researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors.
 
 
-```{r nigeria-population, fig.align = "center", out.height="300px", echo=FALSE, fig.alt = "A map of Nigeria divided into administrative level 3 divisions and colored by population estimates."}
-knitr::include_graphics("images/PopulationNigeria.PNG", dpi = NA)
+```{r nigeria-population, fig.align = "center", out.height="300px", echo=FALSE, fig.alt = "A map of Switzerland colored by its level of land elevation."}
+knitr::include_graphics("images/ElevationSwitzerland.PNG", dpi = NA)
 ```
 
 ---
@@ -63,6 +63,18 @@ knitr::include_graphics("images/listoftutorials.PNG", dpi = NA)
 ```
 
 ---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## Tutorials and data sources
+
+```{r table, echo=FALSE}
+table <- read.csv(here::here("table.csv"))
+table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%')
+```
+
+---
+
 class: hide-kaustlogo,hide-monashlogo
 
 ## Our tutorials
