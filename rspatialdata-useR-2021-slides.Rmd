@@ -38,7 +38,7 @@ knitr::include_graphics("images/ElevationSwitzerland.PNG", dpi = NA)
 
 class: hide-kaustlogo,hide-monashlogo
 
-## R as a tool for data visualization
+## R for data analysis and visualization
 
 - Several R-packages have been recently developed as clients for various spatial databases and repositories.
 
@@ -78,7 +78,7 @@ table %>% DT::datatable(options = list(pageLength = 12, dom = 't'),width = '100%
 class: hide-kaustlogo,hide-monashlogo
 
 ## Our tutorials
-
+.pull-left[
 - Data source
 
 - R-package used and installation instructions
@@ -92,6 +92,30 @@ class: hide-kaustlogo,hide-monashlogo
 - Different approaches in visualizing downloaded data
 
 - List of examples
+]
+
+.pull-right[
+```{r temp,eval=FALSE}
+# Downloading monthly maximum temperature data
+tmax_data <- getData(name = "worldclim", var = "tmax", res = 10)
+# Converting temperature values to Celcius
+gain(tmax_data)=0.1
+# Calculating mean of the monthly maximum temperatures
+tmax_mean <- mean(tmax_data)
+# Converting the raster object into a dataframe
+tmax_mean_df <- as.data.frame(tmax_mean, xy = TRUE, na.rm = TRUE)
+tmax_mean_df %>%
+  ggplot(aes(x=x,y=y)) +
+  geom_raster(aes(fill = layer)) +
+  labs(title = "Mean monthly maximum temperatures",
+       subtitle = "For the years 1970-2000") +
+  xlab("Longitude") +
+  ylab("Latitude") +
+  scale_fill_gradientn(name = "Temperature (°C)",
+                       colours=c("#0094D1","#68C1E6", "#FEED99","#AF3301"),
+                       breaks = c(-20, 0, 20, 40))
+```
+]
 
 - References
 
@@ -117,10 +141,13 @@ class: hide-kaustlogo,hide-monashlogo
 
 <table style="width:100%; padding-top: 5em;">
 <tr>
-<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br>Paula Moraga<br>(KAUST)<br><a style="font-size: 12px;" href="mailto:paula.moraga@kaust.edu.sa">paula.moraga@kaust.edu.sa</a></td>
-<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br>Dilinie Seimon<br>(Monash University)<br><a style="font-size: 12px;" href="mailto:asei0003@student.monash.edu">asei0003@student.monash.edu</a></td>
-<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br>Varsha Ujjini Vijay Kumar<br>(Monash University)<br><a style="font-size: 12px;" href="mailto:vujj0001@student.monash.edu">vujj0001@student.monash.edu</a></td>
-<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br>Andre Ribeiro Amaral<br>(KAUST)<br><a style="font-size: 12px;" href="mailto:andre.ribeiroamaral@kaust.edu.sa">andre.ribeiroamaral@kaust.edu.sa</a></td>
+<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br><a style="font-size: 12px;"href="https://www.paulamoraga.com/">Paula Moraga (KAUST)</a></td>
+
+<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br><a style="font-size: 12px;"href="https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon (Monash university)</a></td>
+
+<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br><a style="font-size: 12px;"href="https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/">Varsha Ujjinni Vijay Kumar (Monash University)</a></td>
+
+<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br><a style="font-size: 12px;" href="https://www.avramaral.com/">Andre Ribeiro Amaral (KAUST)</a></td>
 </tr>
 </table>
 
