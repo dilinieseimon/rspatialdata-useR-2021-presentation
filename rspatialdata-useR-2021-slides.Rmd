@@ -55,7 +55,7 @@ class: hide-kaustlogo,hide-monashlogo
 
 A collection of data sources and tutorials on visualizing spatial data using R.
 
-<h3 style="font-size: 25px; text-align: center;"><a href="https://rspatialdata.github.ioa">www.rspatialdata.github.io</a></h3>
+<h3 style="font-size: 25px; text-align: center;"><a href="https://rspatialdata.github.io">www.rspatialdata.github.io</a></h3>
 
 
 ```{r rspatialdata, fig.align = "center", out.height="200px", echo=FALSE, fig.alt = "A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution"}
