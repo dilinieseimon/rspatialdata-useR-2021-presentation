@@ -1,5 +1,5 @@
 ---
-title: "rspatialdata - A collection of data sources and tutorials on visualising spatial data using R"
+title: "rspatialdata - A collection of data sources and tutorials on visualizing spatial data using R"
 output:
   xaringan::moon_reader:
     includes:
@@ -126,7 +126,7 @@ class: hide-kaustlogo,hide-monashlogo
 <tr>
 <td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br><a href="https://www.paulamoraga.com/">Paula Moraga</a><br>(KAUST)</td>
 
-<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br><a href="https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon</a><br>(Monash university)</td>
+<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br><a href="https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon</a><br>(Monash University)</td>
 
 <td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br><a href="https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/">Varsha Ujjinni Vijay Kumar</a><br>(Monash University)</td>
 
