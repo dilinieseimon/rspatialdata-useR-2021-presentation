@@ -139,15 +139,15 @@ class: hide-kaustlogo,hide-monashlogo
 
 ## Thanks!
 
-<table style="width:100%; padding-top: 5em;">
+<table style="width:100%; padding-top: 5em; font-size: 12px;">
 <tr>
-<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br><a style="font-size: 12px;"href="https://www.paulamoraga.com/">Paula Moraga (KAUST)</a></td>
+<td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br><a href="https://www.paulamoraga.com/">Paula Moraga</a><br>(KAUST)</td>
 
-<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br><a style="font-size: 12px;"href="https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon (Monash university)</a></td>
+<td style="width:25%; text-align:center"><img src="images/dilinieseimon.png" width="120px"><br><a href="https://www.linkedin.com/in/dilinieseimon/">Dilinie Seimon</a><br>(Monash university)</td>
 
-<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br><a style="font-size: 12px;"href="https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/">Varsha Ujjinni Vijay Kumar (Monash University)</a></td>
+<td style="width:25%; text-align:center"><img src="images/varshaujjini.png" width="120px"><br><a href="https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/">Varsha Ujjinni Vijay Kumar</a><br>(Monash University)</td>
 
-<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br><a style="font-size: 12px;" href="https://www.avramaral.com/">Andre Ribeiro Amaral (KAUST)</a></td>
+<td style="width:25%; text-align:center"><img src="images/andreamaral.png" width="120px"><br><a href="https://www.avramaral.com/">Andre Ribeiro Amaral</a><br>(KAUST)</td>
 </tr>
 </table>
 
