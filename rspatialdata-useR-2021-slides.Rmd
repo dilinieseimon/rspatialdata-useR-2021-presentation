@@ -139,7 +139,7 @@ class: hide-kaustlogo,hide-monashlogo
 
 ## Thanks!
 
-<table style="width:100%; padding-top: 5em; font-size: 12px;">
+<table style="width:100%; padding-top: 5em; font-size: 14px;">
 <tr>
 <td style="width:25%; text-align:center"><img src="images/paulamoraga.png" width="120px"><br><a href="https://www.paulamoraga.com/">Paula Moraga</a><br>(KAUST)</td>
 
