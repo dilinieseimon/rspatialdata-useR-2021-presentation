@@ -133,3 +133,4 @@ class: hide-kaustlogo,hide-monashlogo
 </tr>
 </table>
 
+<h3 style="font-size: 25px; text-align: center;padding-top: 3em;"><a href="https://rspatialdata.github.io">www.rspatialdata.github.io</a></h3>
