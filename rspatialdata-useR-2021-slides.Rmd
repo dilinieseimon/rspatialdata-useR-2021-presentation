@@ -16,7 +16,6 @@ output:
 
 ```{r libraries, include=FALSE}
 library(tidyverse)
-library(readxl)
 ```
 
 class: hide-kaustlogo,hide-monashlogo

@@ -1,13 +1,13 @@
 Spatial Property,R-Package ,Data Source
-Administrative Boundaries ,Rgeoboundaries ,geoBoundaries API
-Open Street Map data,osmdata,OpenStreetMap
-Population,wopr,WorldPop Open Population Repository
-Elevation,elevatr,USGS elevation point query service 
-Temperature,raster ,WorldClim
-Rainfall,nasapower,NASA POWER
-Humidity,nasapower,NASA POWER
-Vegetation,MODIStsp,MODIS (NASA)
-Land Cover ,MODIStsp,MODIS (NASA)
-DHS,rdhs,Demographic and Health Survey(DHS) API
-Malaria,malariaAtlas,Malaria Atlas Project-data explorer
-Air Pollution,openair,UK Air Information Resource
+Administrative Boundaries ,Rgeoboundaries ,"<a href=""https://www.geoboundaries.org/"">geoBoundaries API</a>"
+Open Street Map data,osmdata,"<a href=""https://www.openstreetmap.org/"">OpenStreetMap (OSM)</a>"
+Population,wopr,"<a href=""https://www.worldpop.org/"">WorldPop</a>"
+Elevation,elevatr,"<a href=""https://registry.opendata.aws/terrain-tiles/"">AWS Terrain Tiles</a>"
+Temperature,raster ,"<a href=""https://www.worldclim.org/"">WorldClim</a>"
+Rainfall,nasapower,"<a href=""https://power.larc.nasa.gov/"">NASA-POWER Project API</a>"
+Humidity,nasapower,"<a href=""https://power.larc.nasa.gov/"">NASA-POWER Project API</a>"
+Vegetation,MODIStsp,"<a href=""https://modis.gsfc.nasa.gov/data/dataprod/"">MODIS</a>"
+Land Cover ,MODIStsp,"<a href=""https://modis.gsfc.nasa.gov/data/dataprod/"">MODIS</a>"
+Demographic and Health Surveys (DHS) ,rdhs,"<a href=""https://www.dhsprogram.com/"">DHS Program</a>"
+Malaria,malariaAtlas,"<a href=""https://malariaatlas.org/data-project/"">Malaria Atlas Project (MAP)</a>"
+Air Pollution,openair,"<a href=""https://www.dhsprogram.com/"">UK Department Environment Food & Rural Affairs</a>"
