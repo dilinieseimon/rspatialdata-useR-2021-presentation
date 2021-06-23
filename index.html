@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>rspatialdata - A collection of data sources and tutorials on visualizing spatial data using R</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/useR.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/useR-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+    <script src="libs/jquery-3.5.1/jquery.min.js"></script>
+    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding-0.17/datatables.js"></script>
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# rspatialdata - A collection of data sources and tutorials on visualizing spatial data using R
+
+---
+
+
+
+
+
+
+class: hide-kaustlogo,hide-monashlogo
+
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+## Importance of spatial data
+
+- Increased accessibility to open and reliable data, analytical tools and geographic information systems.
+
+- Used by researchers in diverse disciplines within the physical, social and environmental sciences and public health sectors.
+
+
+&lt;img src="images/ElevationSwitzerland.PNG" title="A map of Switzerland colored by its level of land elevation." alt="A map of Switzerland colored by its level of land elevation." height="300px" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## R for data analysis and visualization
+
+- Several R-packages have been recently developed as clients for various spatial databases and repositories.
+
+- Although documentation exists, there is an increasing need for a one stop repository of this information and a guide on how to use them.
+
+&lt;img src="images/NDVIMongolia.PNG" title="A map of Mongolia colored by the Normalized Difference Vegetation Index recorded on 01-06-2020." alt="A map of Mongolia colored by the Normalized Difference Vegetation Index recorded on 01-06-2020." height="300px" style="display: block; margin: auto;" /&gt;
+
+---
+class: hide-kaustlogo,hide-monashlogo
+
+## rspatialdata
+
+A collection of data sources and tutorials on visualizing spatial data using R.
+
+&lt;h3 style="font-size: 25px; text-align: center;"&gt;&lt;a href="https://rspatialdata.github.io"&gt;www.rspatialdata.github.io&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;img src="images/listoftutorials.PNG" title="A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution" alt="A grid of icons showing the list of tutorials included on the rspatialdata website. Namely they are administrative boundaries,open street map data, population, elevation, temperature, rainfall, humidity, vegetation, land cover, dhs, malaria and air pollution" height="200px" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## Tutorials and data sources
+
+<div id="htmlwidget-fed8daae95bcdee559a3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fed8daae95bcdee559a3">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12"],["Administrative Boundaries ","Open Street Map data","Population","Elevation","Temperature","Rainfall","Humidity","Vegetation","Land Cover ","Demographic and Health Surveys (DHS) ","Malaria","Air Pollution"],["Rgeoboundaries ","osmdata","wopr","elevatr","raster ","nasapower","nasapower","MODIStsp","MODIStsp","rdhs","malariaAtlas","openair"],["&lt;a href=\"https://www.geoboundaries.org/\"&gt;geoBoundaries API&lt;/a&gt;","&lt;a href=\"https://www.openstreetmap.org/\"&gt;OpenStreetMap (OSM)&lt;/a&gt;","&lt;a href=\"https://www.worldpop.org/\"&gt;WorldPop&lt;/a&gt;","&lt;a href=\"https://registry.opendata.aws/terrain-tiles/\"&gt;AWS Terrain Tiles&lt;/a&gt;","&lt;a href=\"https://www.worldclim.org/\"&gt;WorldClim&lt;/a&gt;","&lt;a href=\"https://power.larc.nasa.gov/\"&gt;NASA-POWER Project API&lt;/a&gt;","&lt;a href=\"https://power.larc.nasa.gov/\"&gt;NASA-POWER Project API&lt;/a&gt;","&lt;a href=\"https://modis.gsfc.nasa.gov/data/dataprod/\"&gt;MODIS&lt;/a&gt;","&lt;a href=\"https://modis.gsfc.nasa.gov/data/dataprod/\"&gt;MODIS&lt;/a&gt;","&lt;a href=\"https://www.dhsprogram.com/\"&gt;DHS Program&lt;/a&gt;","&lt;a href=\"https://malariaatlas.org/data-project/\"&gt;Malaria Atlas Project (MAP)&lt;/a&gt;","&lt;a href=\"https://www.dhsprogram.com/\"&gt;UK Department Environment Food &amp; Rural Affairs&lt;/a&gt;"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Spatial.Property<\/th>\n      <th>R.Package<\/th>\n      <th>Data.Source<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"dom":"t","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+
+---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## Our tutorials
+.pull-left[
+- Data source
+
+- R-package used and installation instructions
+
+- Functions available
+
+- Downloading data
+
+- Interpreting downloaded spatial objects
+
+- Different approaches in visualizing downloaded data
+
+- List of examples
+]
+
+.pull-right[
+&lt;img src="images/AdminBoundariesNigeriaChad.PNG" title="A visualization of administrative level 1 boundaries of Nigeria and Chad along with the R code to download using the rgeoboundaries package and visualise it using the leaflet package" alt="A visualization of administrative level 1 boundaries of Nigeria and Chad along with the R code to download using the rgeoboundaries package and visualise it using the leaflet package" height="450px" /&gt;
+]
+
+- References
+
+---
+
+class: hide-kaustlogo,hide-monashlogo
+
+## Our vision
+
+- Not to be a comprehensive list of R-packages or tutorials, but to be a starting point for spatial data visualization using R.
+
+- We want users to understand the process of visualizing different spatial objects using different packages and apply it to their need, rather than simply replicating our tutorials.
+
+
+&lt;img src="images/LandCoverZimbabwe.PNG" title="A map of Zimbabwe colored by the classification of land cover types in the year 2019." alt="A map of Zimbabwe colored by the classification of land cover types in the year 2019." height="300px" style="display: block; margin: auto;" /&gt;
+
+---
+class: hide-kaustlogo,hide-monashlogo
+
+## Thanks!
+
+&lt;table style="width:100%; padding-top: 5em; font-size: 14px;"&gt;
+&lt;tr&gt;
+&lt;td style="width:25%; text-align:center"&gt;&lt;img src="images/paulamoraga.png" width="120px"&gt;&lt;br&gt;&lt;a href="https://www.paulamoraga.com/"&gt;Paula Moraga&lt;/a&gt;&lt;br&gt;(KAUST)&lt;/td&gt;
+
+&lt;td style="width:25%; text-align:center"&gt;&lt;img src="images/dilinieseimon.png" width="120px"&gt;&lt;br&gt;&lt;a href="https://www.linkedin.com/in/dilinieseimon/"&gt;Dilinie Seimon&lt;/a&gt;&lt;br&gt;(Monash University)&lt;/td&gt;
+
+&lt;td style="width:25%; text-align:center"&gt;&lt;img src="images/varshaujjini.png" width="120px"&gt;&lt;br&gt;&lt;a href="https://www.linkedin.com/in/varsha-ujjinni-vijay-kumar-1026121a4/"&gt;Varsha Ujjinni Vijay Kumar&lt;/a&gt;&lt;br&gt;(Monash University)&lt;/td&gt;
+
+&lt;td style="width:25%; text-align:center"&gt;&lt;img src="images/andreamaral.png" width="120px"&gt;&lt;br&gt;&lt;a href="https://www.avramaral.com/"&gt;Andre Ribeiro Amaral&lt;/a&gt;&lt;br&gt;(KAUST)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3 style="font-size: 25px; text-align: center;padding-top: 3em;"&gt;&lt;a href="https://rspatialdata.github.io"&gt;www.rspatialdata.github.io&lt;/a&gt;&lt;/h3&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.kaustlogo {
+  background-image: url(images/KAUSTlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 27em;
+  left: 22em;
+  width: 210px;
+  height: 132px;
+  z-index: 0;
+}
+
+.monashlogo {
+  background-image: url(images/MONASHlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 26em;
+  left: 12em;
+  width: 215px;
+  height: 140px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.hide-kaustlogo)' +
+    ':not(.hide-monashlogo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<h3 style="padding-top: 2em">Dilinie Seimon<br>Varsha Ujjini Vijay Kumar</h3>';
+    el.innerHTML += '<h3 style="padding-top: 1em; font-size: 18px;">In collaboration with Paula Moraga and Andre Ribeiro Amaral</h3>';
+    el.innerHTML += '<div class="monashlogo"></div>';
+    el.innerHTML += '<div class="kaustlogo"></div>';
+  });
+</script>
+
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
